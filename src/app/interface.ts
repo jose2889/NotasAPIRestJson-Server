@@ -1,6 +1,6 @@
 export class UserResponse {
-    // logrin: string;
-    // // e: string;
-    // // de: string;
+    title: string;
+    body: string;
+    author: string;
     // // v: string;
   }

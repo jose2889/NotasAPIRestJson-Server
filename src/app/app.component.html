@@ -1,39 +1,72 @@
 <!-- <h1>{{user.name}}</h1>
 <img src="{{user.avatar_url}}" alt="..." class="rounded-circle">
 <a href="{{user.html_url}}">Sitio Web</a> -->
-{{titulo}}
-<ul>
-  <li *ngFor="let dato of user">
-    <p>Id: {{dato.id}} - Titulo: {{dato.titulo}} - Nota: {{dato.cuerpo}} -- Autor: {{dato.autor}}</p>
-  </li>
-</ul>
-<div class="container">
+<div class="container-fluid">
   <div class="row">
-    <div class="form-group col-md-4">
-      <label for="t">Titulo</label>
-      <input type="text" class="form-control" name="titulo" [(ngModel)]="titulo" id="t">
-    </div>
-  </div>
-            
-  <div class="row">
-    <div class="form-group col-md-4">
-      <label for="b">Contenido</label>
-      <input type="text" class="form-control" name="body" [(ngModel)]="body" id="b">  
-    </div>
-  </div>
-    
-  <div class="row">
-    <div class="form-group col-md-4">
-      <label for="a">Autor</label>
-      <input type="text" class="form-control" name="autor" [(ngModel)]="autor" id="a">         
-    </div>
-  </div>
-
-  <div class="row">
-      <div class="form-group col-md-4">
-        <button type="submit" class="btn btn-success" (click)="agregar()">Agregar</button>
+    <div class="col-md-6">
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Titulo</th>
+            <th scope="col">Nota</th>
+            <th scope="col">Autor</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let d of dato">
+            <th scope="row">{{d.id}} </th>
+            <td>{{d.titulo}}</td>
+            <td>{{d.cuerpo}}</td>
+            <td>{{d.autor}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>  
+    <!-- hasta aqui va bien -->
+    <div class="col-md-6">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card">
+            <h5 class="card-header">Registro de Formulario</h5>
+            <div class="card-body">
+              <h5 class="card-title">Nueva Nota</h5>
+              <form action="">
+                <div class="row">
+                  <div class="form-group col-md-10">
+                    <label for="t">Titulo</label>
+                    <input type="text" class="form-control" name="title" [(ngModel)]="datos.title" id="t">
+                  </div>          
+                </div>                     
+                <div class="row">
+                  <div class="form-group col-md-10">
+                    <label for="b">Contenido</label>
+                    <input type="text" class="form-control" name="body" [(ngModel)]="datos.body" id="b">  
+                  </div>
+                </div>        
+                <div class="row">
+                  <div class="form-group col-md-10">
+                    <label for="a">Autor</label>
+                    <input type="text" class="form-control" name="autor" [(ngModel)]="datos.author" id="a">         
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 text-center">
+                    <button type="submit" class="btn btn-info" (click)="enviar()">Agregar</button>  
+                    <button type="reset" class="btn btn-danger" (click)="enviar()">Limpiar</button>                  
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </div>    
+  </div>
 </div>
+
+
+  
+
 
 

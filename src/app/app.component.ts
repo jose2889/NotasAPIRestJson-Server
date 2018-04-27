@@ -11,16 +11,26 @@ import { ApiService } from './api.service';
 export class AppComponent implements OnInit {
   title = 'app';
 
-  titulo:string;
-  body:string;
-  autor:string;
-  user:UserResponse;
   
-  constructor(private servicio:ApiService){}
+  datos:UserResponse = {title:'',body:'',author:''};
 
-  ngOnInit(): void {
-   
+  dato:UserResponse;
+
+  constructor(private servicio:ApiService){
+    this.servicio.getdata().subscribe(data => {this.dato = data
+    console.log(this.dato);
     
+    });
+  }
+
+  ngOnInit(): void {  
+    
+  }
+
+  public enviar(){
+    // console.log(this.datos);
+    this.servicio.agregar(this.datos);
+    this.datos = {title:'',body:'',author:''};
   }
   
   

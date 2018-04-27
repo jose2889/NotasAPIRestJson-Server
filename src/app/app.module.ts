@@ -6,6 +6,7 @@ import { FormsModule  } from '@angular/forms';
 
 
 import { AppComponent } from './app.component';
+import { ApiService } from './api.service';
 
 
 @NgModule({
@@ -18,7 +19,7 @@ import { AppComponent } from './app.component';
     FormsModule
 
   ],
-  providers: [],
+  providers: [ApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

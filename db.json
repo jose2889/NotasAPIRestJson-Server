@@ -1,0 +1,253 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "titulo": "nota 1",
+      "cuerpo": "primera nota",
+      "autor": "jose hernandez",
+      "id": 2
+    },
+    {
+      "titulo": "6876",
+      "cuerpo": "78678",
+      "autor": "678",
+      "id": 3
+    },
+    {
+      "titulo": "777",
+      "cuerpo": "7777",
+      "autor": "777",
+      "id": 4
+    },
+    {
+      "titulo": "88",
+      "cuerpo": "888",
+      "autor": "88",
+      "id": 5
+    },
+    {
+      "titulo": "9999",
+      "cuerpo": "9999",
+      "autor": "999",
+      "id": 6
+    },
+    {
+      "titulo": "22",
+      "cuerpo": "222",
+      "autor": "222",
+      "id": 7
+    },
+    {
+      "titulo": "88",
+      "cuerpo": "88",
+      "autor": "88",
+      "id": 8
+    },
+    {
+      "titulo": "rrrr",
+      "cuerpo": "rrr",
+      "autor": "rrrr",
+      "id": 9
+    },
+    {
+      "titulo": "rrrr",
+      "cuerpo": "rrr",
+      "autor": "rrrr",
+      "id": 10
+    },
+    {
+      "titulo": "767",
+      "cuerpo": "86868",
+      "autor": "867",
+      "id": 11
+    },
+    {
+      "titulo": "767",
+      "cuerpo": "86868",
+      "autor": "867",
+      "id": 12
+    },
+    {
+      "titulo": "767",
+      "cuerpo": "86868",
+      "autor": "867",
+      "id": 13
+    },
+    {
+      "titulo": "767",
+      "cuerpo": "86868",
+      "autor": "867",
+      "id": 14
+    },
+    {
+      "titulo": "767",
+      "cuerpo": "86868",
+      "autor": "867",
+      "id": 15
+    },
+    {
+      "titulo": "767",
+      "cuerpo": "86868",
+      "autor": "867",
+      "id": 16
+    },
+    {
+      "titulo": "767",
+      "cuerpo": "86868",
+      "autor": "867",
+      "id": 17
+    },
+    {
+      "titulo": "767",
+      "cuerpo": "86868",
+      "autor": "867",
+      "id": 18
+    },
+    {
+      "titulo": "767",
+      "cuerpo": "86868",
+      "autor": "867",
+      "id": 19
+    },
+    {
+      "titulo": "767",
+      "cuerpo": "86868",
+      "autor": "867",
+      "id": 20
+    },
+    {
+      "titulo": "767",
+      "cuerpo": "86868",
+      "autor": "867",
+      "id": 21
+    },
+    {
+      "titulo": "767",
+      "cuerpo": "86868",
+      "autor": "867",
+      "id": 22
+    },
+    {
+      "titulo": "767",
+      "cuerpo": "86868",
+      "autor": "867",
+      "id": 23
+    },
+    {
+      "titulo": "767",
+      "cuerpo": "86868",
+      "autor": "867",
+      "id": 24
+    },
+    {
+      "titulo": "767",
+      "cuerpo": "86868",
+      "autor": "867",
+      "id": 25
+    },
+    {
+      "titulo": "767",
+      "cuerpo": "86868",
+      "autor": "867",
+      "id": 26
+    },
+    {
+      "titulo": "767",
+      "cuerpo": "86868",
+      "autor": "867",
+      "id": 27
+    },
+    {
+      "titulo": "767",
+      "cuerpo": "86868",
+      "autor": "867",
+      "id": 28
+    },
+    {
+      "titulo": "767",
+      "cuerpo": "86868",
+      "autor": "867",
+      "id": 29
+    },
+    {
+      "titulo": "767",
+      "cuerpo": "86868",
+      "autor": "867",
+      "id": 30
+    },
+    {
+      "titulo": "767",
+      "cuerpo": "86868",
+      "autor": "867",
+      "id": 31
+    },
+    {
+      "titulo": "767",
+      "cuerpo": "86868",
+      "autor": "867",
+      "id": 32
+    },
+    {
+      "titulo": "767",
+      "cuerpo": "86868",
+      "autor": "867",
+      "id": 33
+    },
+    {
+      "titulo": "767",
+      "cuerpo": "86868",
+      "autor": "867",
+      "id": 34
+    },
+    {
+      "titulo": "6876",
+      "cuerpo": "78687",
+      "autor": "676867",
+      "id": 35
+    },
+    {
+      "titulo": "686686",
+      "cuerpo": "66868",
+      "autor": "68678678",
+      "id": 36
+    },
+    {
+      "titulo": "678686",
+      "cuerpo": "8688",
+      "autor": "676",
+      "id": 37
+    },
+    {
+      "titulo": "5",
+      "cuerpo": "5",
+      "autor": "5",
+      "id": 38
+    },
+    {
+      "titulo": "44",
+      "cuerpo": "44",
+      "autor": "4",
+      "id": 39
+    },
+    {
+      "titulo": "33",
+      "cuerpo": "333",
+      "autor": "33",
+      "id": 40
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
