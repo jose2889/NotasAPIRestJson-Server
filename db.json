@@ -1,17 +1,6 @@
 {
   "posts": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    },
-    {
-      "titulo": "nota 1",
-      "cuerpo": "primera nota",
-      "autor": "jose hernandez",
-      "id": 2
-    },
-    {
       "titulo": "6876",
       "cuerpo": "78678",
       "autor": "678",
@@ -240,13 +229,7 @@
       "id": 40
     }
   ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
+  "comments": [],
   "profile": {
     "name": "typicode"
   }

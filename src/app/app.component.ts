@@ -15,7 +15,7 @@ export class AppComponent implements OnInit {
   datos:UserResponse = {title:'',body:'',author:''};
 
   dato:UserResponse;
-
+ 
   constructor(private servicio:ApiService){
     this.servicio.getdata().subscribe(data => {this.dato = data
     console.log(this.dato);
@@ -33,5 +33,8 @@ export class AppComponent implements OnInit {
     this.datos = {title:'',body:'',author:''};
   }
   
+  borrar(){       
+    this.servicio.eliminar();
+  }
   
 }

@@ -38,4 +38,20 @@ export class ApiService {
         } 
       );
   }
+  eliminar() { 
+    this.http.delete("http://localhost:3000/posts/2")
+    .subscribe(
+      (val) => {
+        console.log("Intentando eliminar", 
+        val);
+      },
+      response => {
+        console.log("DELETE call in error", response);
+      },
+      () => {
+        console.log("el proceso de eliiminacion ha sido completado.");
+      });
+    }    
 }
+  
+  

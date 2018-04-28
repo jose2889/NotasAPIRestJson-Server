@@ -53,10 +53,18 @@
                 <div class="row">
                   <div class="col-md-12 text-center">
                     <button type="submit" class="btn btn-info" (click)="enviar()">Agregar</button>  
-                    <button type="reset" class="btn btn-danger" (click)="enviar()">Limpiar</button>                  
+                    <button type="reset" class="btn btn-danger">Limpiar</button>                  
                   </div>
                 </div>
               </form>
+              <div class="row">
+                <div class="form-group col-md-10">
+                  <label for="a">Id del registro a eliminar</label>
+                  <input type="number" class="form-control" name="id" [(ngModel)]="id" id="a">   
+                  <button type="button" class="btn btn-danger" (click)="borrar()">Eliminar</button>               
+                        
+                </div>
+              </div>
             </div>
           </div>
         </div>
