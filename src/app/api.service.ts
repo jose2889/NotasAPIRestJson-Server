@@ -38,8 +38,8 @@ export class ApiService {
         } 
       );
   }
-  eliminar() { 
-    this.http.delete("http://localhost:3000/posts/2")
+  eliminar(id) { 
+    this.http.delete("http://localhost:3000/posts/"+id)
     .subscribe(
       (val) => {
         console.log("Intentando eliminar", 

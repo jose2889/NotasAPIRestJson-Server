@@ -3,75 +3,82 @@
 <a href="{{user.html_url}}">Sitio Web</a> -->
 <div class="container-fluid">
   <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-6 bg-info">
       <table class="table">
         <thead class="thead-dark">
           <tr>
-            <th scope="col">Id</th>
-            <th scope="col">Titulo</th>
-            <th scope="col">Nota</th>
-            <th scope="col">Autor</th>
+            <th>Id</th>
+            <th>Titulo</th>
+            <th>Nota</th>
+            <th>Autor</th>
+            <th>Opciones</th>
+            
           </tr>
         </thead>
         <tbody>
           <tr *ngFor="let d of dato">
-            <th scope="row">{{d.id}} </th>
+            <th scope="row">{{d.id}}</th>
             <td>{{d.titulo}}</td>
             <td>{{d.cuerpo}}</td>
             <td>{{d.autor}}</td>
+            <td><a href="#" class="btn btn-danger" (click)="borrar(d.id)" >Eliminar</a></td>            
           </tr>
         </tbody>
       </table>
     </div>  
     <!-- hasta aqui va bien -->
-    <div class="col-md-6">
+    <div class="col-md-6 bg-danger">
       <div class="row">
         <div class="col-md-12">
           <div class="card">
             <h5 class="card-header">Registro de Formulario</h5>
             <div class="card-body">
               <h5 class="card-title">Nueva Nota</h5>
-              <form action="">
+              <form (ngSubmit)="enviar()" [formGroup]="formulario">
                 <div class="row">
                   <div class="form-group col-md-10">
                     <label for="t">Titulo</label>
-                    <input type="text" class="form-control" name="title" [(ngModel)]="datos.title" id="t">
+                    <input type="text" formControlName="title" class="form-control" id="t">
+                    <div class="text-danger" *ngIf="formulario.controls.title.errors && formulario.controls.title.touched">
+                        <P *ngIf="formulario.controls.title.errors.required">EL CAMPO ES REQUERIDO</P>
+                    </div>
                   </div>          
                 </div>                     
                 <div class="row">
                   <div class="form-group col-md-10">
                     <label for="b">Contenido</label>
-                    <input type="text" class="form-control" name="body" [(ngModel)]="datos.body" id="b">  
+                    <input type="text" formControlName="body" class="form-control" id="b">  
+                    <div class="text-danger" *ngIf="formulario.controls.body.errors && formulario.controls.body.touched">
+                        <P *ngIf="formulario.controls.body.errors.required">EL CAMPO ES REQUERIDO</P>
+                    </div>
                   </div>
                 </div>        
                 <div class="row">
                   <div class="form-group col-md-10">
                     <label for="a">Autor</label>
-                    <input type="text" class="form-control" name="autor" [(ngModel)]="datos.author" id="a">         
+                    <input type="text" formControlName="author" class="form-control"  id="a">         
+                    <div class="text-danger" *ngIf="formulario.controls.author.errors && formulario.controls.author.touched">
+                        <P *ngIf="formulario.controls.author.errors.required">EL CAMPO ES REQUERIDO</P>
+                    </div>
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-md-12 text-center">
-                    <button type="submit" class="btn btn-info" (click)="enviar()">Agregar</button>  
+                    <button type="submit" [disabled] = "!formulario.valid" class="btn btn-info">Agregar</button>  
                     <button type="reset" class="btn btn-danger">Limpiar</button>                  
                   </div>
                 </div>
               </form>
-              <div class="row">
-                <div class="form-group col-md-10">
-                  <label for="a">Id del registro a eliminar</label>
-                  <input type="number" class="form-control" name="id" [(ngModel)]="id" id="a">   
-                  <button type="button" class="btn btn-danger" (click)="borrar()">Eliminar</button>               
-                        
-                </div>
-              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>    
-  </div>
+    </div>
+  </div>    
 </div>
+
+
+
 
 
   
